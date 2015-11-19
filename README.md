@@ -13,8 +13,9 @@ npm i
 npm start
 ```
 
-#### Run dredd
+#### Run dredd, dredd-bench
 
 ```shell
 npm run dredd
+npm run dredd-bench
 ````

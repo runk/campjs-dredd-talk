@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node index",
-    "dredd": "dredd ./docs/blueprint.md http://localhost:3000"
+    "dredd": "dredd ./docs/blueprint.md http://localhost:3000",
+    "dredd-bench": "dredd-bench ./docs/blueprint.md http://localhost:3000 --latency=50 --time=3000 --method=GET --method=PUT"
   },
   "author": "Dmitry Shirokov",
   "license": "MIT",
