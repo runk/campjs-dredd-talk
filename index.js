@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({extended: false}))
 
 // Basic request logger
 app.use(function(req, res, next) {
-  console.log('%s   %s %s', new Date().toISOString(), req.method, req.url)
+  console.log('%s  %s %s', new Date().toISOString(), req.method, req.url)
   next()
 })
 

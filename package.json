@@ -6,13 +6,14 @@
   "scripts": {
     "start": "node index",
     "dredd": "dredd ./docs/blueprint.md http://localhost:3000",
-    "dredd-bench": "dredd-bench ./docs/blueprint.md http://localhost:3000 --latency=50 --time=3000 --method=GET --method=PUT"
+    "dredd-bench": "dredd-bench ./docs/blueprint.md http://localhost:3000 --latency=50 --time=3000 --concurrency=4 --method=GET --method=PUT"
   },
   "author": "Dmitry Shirokov",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.14.1",
     "dredd": "^1.0.1",
+    "dredd-bench": "^0.1.0",
     "express": "^4.13.3"
   }
 }
